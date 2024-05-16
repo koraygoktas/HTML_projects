@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desrictions" content="html 1991 de tim berners lee tarafındna geliştirildi">
+    <meta name="keywords" content="html,css,c++">
+    <title>html devamkee</title>
+
+</head>
+
+<!--
+---form kullanımları---
+<input type="text"
+<input type="password"
+<input type="email"
+<input type="checkbox"
+<input type="radio"
+<input type="file"
+<input type="reset"
+<input type="submit"
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+<select><option>
+
+-->
+<!--bugünkü dersimizde form etiketlerini öğreneceğiz,form oluşturmayı-->
+<body>
+    <form><!--buradaki formun içinde action="site_adresi" yazılacak ve site seni oraya 
+            yönlendirip gönderdiğin adresi teyit edecek ama bunları csste falan göreceksin-->
+         adınız: <input type="text" >
+        <!-- <input type="text" placeholder="isminiz"> kutunun içinde isminiz yazar ama arka plandadır 
+            o yazı-->
+        şifreniz: <input type="password">
+        <br><br>
+        <input type="email" placeholder="emailiniz"><!--burada giriğiniz şey @ barındırmazsa
+            giridiğiniz şeyin email olmadğını anlayıp hata verecektir-->
+        <br><br>
+        kitap okumak<input type="checkbox" id="kitapcheckboxı"><br><!--checkbox kullanarak
+        bunları benzersiz yapabilirsin mesela kitap okumayı onayladığında sağ köşeden
+        kitap okuma onaylandı gibi bir uyarının gelmesini sağlayabilrsin bu sayede-->
+        yüzmek<input type="checkbox" id="yüzmecheckboxı"><!--bunlar sözleşmeyi onaylıyor musunuzdaki
+            kutucuklardır tickleyebiliyorsunuz-->
+            <br>
+            <br>
+        kadın<input type="radio" name="cinsiyetradio" ><!--burada kadının seçili olarak
+        gelmesini istiyorsanız type name attributeları gibi checked="true"
+        sayfa ilk yüklendiğinde direkt olarak kadının seçili olarak gelmesini sağlayabilrisiniz-->
+        <br>
+        erkek<input type="radio" name="cinsiyetradio"><!--name attributeüne aynı şeyi
+        verince birini seçince diğerini seçemiyoruz ama ortada hiçbi şey olmasaydı yani 
+        name falan olmasaydı ikisini de seçebilirdik-->
+        <br><br>
+        <input type="file"><br><br>
+        <span>içecek seçiniz:</span>
+        <select>
+            <option value="çay">çay</option><!--burada valueleri yazmasan da olur-->
+            <option value="kahve">kahve</option>
+            <option value="kola">kola</option>
+        </select><br><br>
+        <span>mesajınızı giriniz</span><br>
+        <textarea name="mesaj" id="mesajalanı" cols="30" rows="10"  ></textarea><br>
+
+        <input type="submit" value="gönder"><br>
+        <input type="reset" value="sıfırla"><!--default değeri yani varsayılan değeri reset olarak gelir
+        sen eğer bunun farklı bir şey olmasını istersen value attributeü ile bunun
+        ne olmasını istediğini seçebilrsin -->
+        <!--ayrıca resetin görevi mesela sitede her şeyi doldurdun butonnları tickledin adını
+            soy adını vs yazdın reset butonuna basınca her şey sıfırlanıyor-->
+
+    </form>
+</body>
+</html>
